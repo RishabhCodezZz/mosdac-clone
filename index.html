@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSDAC Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Accessibility Bar -->
+    <div class="accessibility-bar">
+        <div class="container">
+            <a href="#main-content" class="skip-link">Skip to main Content</a>
+            <div class="accessibility-right">
+                <div class="font-size-controls">
+                    <a href="javascript:;" class="decrease-font">-A</a>
+                    <a href="javascript:;" class="reset-font">A</a>
+                    <a href="javascript:;" class="increase-font">+A</a>
+                </div>
+                <div class="contrast-controls">
+                    <a href="javascript:;" class="high-contrast">A</a>
+                    <a href="javascript:;" class="normal-contrast">A</a>
+                </div>
+                <a href="index.html" class="home-link">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top links -->
+    <div class="top-links-wrapper">
+        <div class="container">
+            <div class="top-links">
+                <a href="#">SignUp</a> |
+                <a href="#">Login</a> |
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="mosdac-logos">
+                        <img src="images/modsac_logo.png" alt="MOSDAC Text Logo" class="mosdac-text">
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h1>Meteorological & Oceanographic Satellite Data Archival Centre</h1>
+                    <p>Space Applications Centre, ISRO</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Missions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">INSAT-3DR</a></li>
+                        <li><a href="#">INSAT-3D</a></li>
+                        <li><a href="#">KALPANA-1</a></li>
+                        <li><a href="#">INSAT-3A</a></li>
+                        <li><a href="#">MeghaTropiques</a></li>
+                        <li><a href="#">SARAL-AltiKa</a></li>
+                        <li><a href="#">OCEANSAT-2</a></li>
+                        <li><a href="#">OCEANSAT-3</a></li>
+                        <li><a href="#">INSAT-3DS</a></li>
+                        <li><a href="#">SCATSAT-1</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Catalog</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Satellite</a></li>
+                        <li><a href="#">Insitu (AWS)</a></li>
+                        <li><a href="#">RADAR</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Galleries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Satellite Products</a></li>
+                        <li><a href="#">Weather Forecast</a></li>
+                        <li><a href="#">Ocean Forecast</a></li>
+                        <li><a href="#">RADAR (DWR)</a></li>
+                        <li><a href="#">Global Ocean Current</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Data Access</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Order Data</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="nested-dropdown-toggle">Open Data</a>
+                            <ul class="nested-dropdown-menu">
+                                <li class="nested-dropdown">
+                                    <a href="#" class="nested-dropdown-toggle">Atmosphere</a>
+                                    <ul class="nested-dropdown-menu">
+                                        <li><a href="#">Bayesian based MT-SAPHIR rainfall</a></li>
+                                        <li><a href="#">GPS derived Integrated water vapour</a></li>
+                                        <li><a href="#">GSMap ISRO Rain</a></li>
+                                        <li><a href="#">METEOSAT8 Cloud Properties</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nested-dropdown">
+                                    <a href="#" class="nested-dropdown-toggle">Land</a>
+                                    <ul class="nested-dropdown-menu">
+                                        <li><a href="#">3D Volumetric TERLS DWRproduct</a></li>
+                                        <li><a href="#">Inland Water Height</a></li>
+                                        <li><a href="#">River Discharge</a></li>
+                                        <li><a href="#">Soil Moisture</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nested-dropdown">
+                                    <a href="#" class="nested-dropdown-toggle">Ocean</a>
+                                    <ul class="nested-dropdown-menu">
+                                        <li><a href="#">Global Ocean Surface Current</a></li>
+                                        <li><a href="#">High Resolution Sea Surface Salinity</a></li>
+                                        <li><a href="#">Indian Mainland Coastal Product</a></li>
+                                        <li><a href="#">Ocean Subsurface</a></li>
+                                        <li><a href="#">Oceanic Eddies Detection</a></li>
+                                        <li><a href="#">Sea Ice Occurrence Probability</a></li>
+                                        <li><a href="#">Wave based Renewable Energy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Cal-Val</a></li>
+                        <li><a href="#">Forecast</a></li>
+                        <li><a href="#">RSS Feeds</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Reports</a>
+                    <ul class="dropdown-menu">
+                        <li class="nested-dropdown">
+                            <a href="#" class="nested-dropdown-toggle">Calibration</a>
+                            <ul class="nested-dropdown-menu">
+                                <li><a href="#">Insitu</a></li>
+                                <li><a href="#">Relative</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Validation</a></li>
+                        <li><a href="#">Data Quality</a></li>
+                        <li><a href="#">Weather</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Atlases</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Tabs -->
+    <div class="content-tabs">
+        <div class="container">
+            <ul class="tab-menu">
+                <li class="active"><a href="#satellite-images">Satellite Images</a></li>
+                <li><a href="#radar">RADAR</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#oceanstate">OceanState</a></li>
+                <li><a href="#live">LIVE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="main-content-grid">
+                <!-- Satellite Image Display -->
+                <section class="satellite-image-section">
+                    <div class="satellite-image">
+                        <img src="images/satellite_image.jpg" alt="Satellite Image">
+                        <div class="image-controls">
+                            <a href="#" class="fullscreen-btn">Fullscreen</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services, Announcements and Search -->
+                <div class="right-content">
+                    <!-- Services Section -->
+                    <section class="services-section">
+                        <h2>Services</h2>
+                        <div class="services-tabs">
+                            <ul class="services-tab-menu">
+                                <li class="active"><a href="#forecast">Forecast</a></li>
+                                <li><a href="#nowcast">Nowcast</a></li>
+                                <li><a href="#current-events">Current Events</a></li>
+                                <li><a href="#alerts">Alerts</a></li>
+                                <li><a href="#met-applications">Met Applications</a></li>
+                                <li><a href="#ocean-applications">Ocean Applications</a></li>
+                            </ul>
+                            <div class="services-tab-content">
+                                <div id="forecast" class="tab-pane active">
+                                    <div class="service-icons">
+                                        <a href="#" class="service-icon">
+                                            <img src="images/city_weather.jpg" alt="Weather">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/cold_waves.jpg" alt="Coldwave">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/cyclone.jpg" alt="Cyclone">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/heatwaves.jpg" alt="Heat-Cold Wave">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/heavy_rain.jpg" alt="Heavy Rain">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/lightning.jpg" alt="Lightning">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/monsoon.jpg" alt="Monsoon">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/sea_state.jpg" alt="Sea State">
+                                        </a>
+                                        <a href="#" class="service-icon">
+                                            <img src="images/solar_wind.jpg" alt="solar_wind">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="nowcast" class="tab-pane">
+                                    <p>Nowcast content will appear here</p>
+                                </div>
+                                <div id="current-events" class="tab-pane">
+                                    <p>Current Events content will appear here</p>
+                                </div>
+                                <div id="alerts" class="tab-pane">
+                                    <p>Alerts content will appear here</p>
+                                </div>
+                                <div id="met-applications" class="tab-pane">
+                                    <p>Met Applications content will appear here</p>
+                                </div>
+                                <div id="ocean-applications" class="tab-pane">
+                                    <p>Ocean Applications content will appear here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Announcements Section -->
+                    <section class="announcements-section">
+                        <h2>Announcements</h2>
+                        <ul class="announcements-list">
+                            <li>
+                                <a href="https://www.mosdac.gov.in/sites/default/files/docs/Onset%20Prediction%202024.pdf">Monsoon Onset Prediction over Kerala (2024)</a>
+                                <span class="document-info">| PDF, Tool: PDFViewer, Size: 763.84 KB | 20-May-24</span>
+                            </li>
+                            <li>
+                                <a href="https://www.mosdac.gov.in/sites/default/files/docs/Onset%20Prediction%202023.pdf">Onset over Kerala - Monsoon 2023</a>
+                                <span class="document-info">| PDF, Tool: PDFViewer, Size: 463.15 KB | 15-May-23</span>
+                            </li>
+                            <li>
+                                <a href="https://www.mosdac.gov.in/sites/default/files/docs/INSAT_Product_Version_information_V01.pdf">INSAT Product Version Information</a>
+                                <span class="document-info">| PDF, Tool: PDFViewer, Size: 1.61 MB | 01-Sep-22</span>
+                            </li>
+                            <li>
+                                <a href="https://www.mosdac.gov.in/sites/default/files/docs/sftp-mosdac_0.pdf">SFTP Services for Data Download</a>
+                                <span class="document-info">| PDF, Tool: PDFViewer, Size: 347.33 KB | 08-Nov-21</span>
+                            </li>
+                            <li>
+                                <a href="https://www.mosdac.gov.in/announcements" class="archive-link">archive</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <!-- Footer Search Section -->
+                <div class="footer-search-section">
+                    <h2>SEARCH</h2>
+                    <div class="footer-search-box">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
+
+                <!-- Footer Follow Us Section -->
+                <div class="footer-follow-section">
+                    <h2>FOLLOW US</h2>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/mosdac.sac.isro" class="footer-social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="http://www.youtube.com/channel/UCDVkai9WIgY2ZgrlF_08Yeg" class="footer-social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.mosdac.gov.in/rss.xml" class="footer-social-icon">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <p class="copyright">
+                    This website is a clone of the original MOSDAC website, owned and maintained by MOSDAC, Space Applications Centre, Indian Space Research Organisation, Govt. of INDIA.
+                </p>
+                <div class="certification">
+                    <a href="#" class="cert-logo">
+                        <img src="images/SAC.jpg" alt="CQW LOGO">
+                    </a>
+                </div>
+                <div class="partner-logos">
+                    <a href="http://www.isro.gov.in/" class="partner-logo">ISRO</a>
+                    <a href="http://www.sac.gov.in/" class="partner-logo">Space Applications Center</a>
+                    <a href="http://www.india.gov.in/" class="partner-logo">NationalPortal</a>
+                    <a href="http://mygov.in/" class="partner-logo">MyGov</a>
+                    <a href="http://www.digitalindia.gov.in/" class="partner-logo">DigitalIndia</a>
+                    <a href="http://data.gov.in/" class="partner-logo">DataPortal</a>
+                </div>
+                <p class="version-info">
+                    Ver 3.0; Last reviewed and updated on 01 Jul, 2025 & Served By: Web-Srv-Pri
+                </p>
+            </div>
+            
+            <!-- Additional Links -->
+            <div class="additional-links">
+                <ul>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                    <li><a href="#">Data Access Policy</a></li>
+                    <li><a href="#">Hyperlink Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Website Policies</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
