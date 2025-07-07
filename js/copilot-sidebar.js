@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.toggle('sidebar-open');
     };
 
+    // Track conversation state
+    let lastResponseWasGeneral = false;
+    
     // Handle sending a query
     const handleSendQuery = () => {
         const inputField = document.querySelector('.copilot-input');
@@ -75,7 +78,27 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 const response = document.createElement('p');
                 response.className = 'ai-response';
-                response.textContent = "I'm a simulated response. In a real implementation, this would connect to an API to provide actual assistance.";
+                
+                // Check for specific queries
+                if (query.toLowerCase().includes('insat-3dr') || query.toLowerCase().includes('insat 3dr')) {
+                    response.innerHTML = `
+                        <p>INSAT-3DR is a geostationary satellite launched by ISRO under the Indian National Satellite System (INSAT) for meteorological and communication purposes.</p>
+                        <p>For more information, visit: <a href="https://www.mosdac.gov.in/insat-3dr" target="_blank" rel="noopener noreferrer">https://www.mosdac.gov.in/insat-3dr</a></p>
+                    `;
+                    lastResponseWasGeneral = false;
+                }
+                // Check if previous response was general and now asking about forecasts
+                else if (lastResponseWasGeneral && 
+                    (query.toLowerCase().includes('weather forecast') || 
+                    query.toLowerCase().includes('weather forecasts') ||
+                    (query.toLowerCase().includes('forecast') && query.toLowerCase().includes('weather')))) {
+                    response.textContent = "Yes, MOSDAC provides nowcasting and short-term weather forecasts using satellite data and models.";
+                    lastResponseWasGeneral = false;
+                } else {
+                    response.textContent = "MOSDAC provides satellite data related to weather, ocean, and climate—like rainfall, cloud cover, sea surface temperature, and more.";
+                    lastResponseWasGeneral = true;
+                }
+                
                 conversation.appendChild(response);
                 
                 // Scroll to bottom of conversation
